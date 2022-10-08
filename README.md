@@ -14,4 +14,4 @@ by contributing to this repository you can also participate in Hactoberfest 2022
 6. Now we will check and merge the fork or branch if it is useful.
 
 # Note
-Try to make some big and useful changes rather than making some small syntax changes.
+Try to make some big and useful changes rather than making some small syntax changes like adding semicolons and commas.
