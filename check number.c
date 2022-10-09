@@ -23,7 +23,7 @@ void checkEvenOdd(int N)
 int main()
 {
     // Given number N
-    int N = 101;
+    int N = 99;
   
     // Function Call
     checkEvenOdd(N);
