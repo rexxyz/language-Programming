@@ -45,7 +45,7 @@ while(c==1 || c==2 || c==3 || c==4 || c==5 ||c==6)
         scanf("%d",&c);
     }
 
-    if(c==6)
+    if(c==6) //exit
     {
         break;
     }
