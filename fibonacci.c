@@ -5,7 +5,7 @@ int main()
 {int n;
  printf("Enter The No Of Terms ");
  scanf("%d",&n);
- printf("%d \n",fib(6));
+ printf("%d \n",fib(n));
  return 0;
 }
 int fib(int n)
