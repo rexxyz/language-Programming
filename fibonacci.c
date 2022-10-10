@@ -2,7 +2,9 @@
 #include<math.h>
 int fib();
 int main()
-{
+{int n;
+ printf("Enter The No Of Terms ");
+ scanf("%d",&n);
  printf("%d \n",fib(6));
  return 0;
 }
