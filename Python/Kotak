@@ -1,0 +1,10 @@
+# Step 1: Make all the “turtle” commands available to us.
+import turtle
+
+# Step 2: Create a new turtle. We’ll call it “mbappe”
+kotak = turtle.Turtle()
+
+## Step 3:menggambar kotak menggunakan 4 garis menggunakan for
+for i in range(4):
+ kotak.forward(50)
+ kotak.right(90)
