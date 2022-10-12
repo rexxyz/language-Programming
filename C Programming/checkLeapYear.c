@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main(void){
-    int yr;
+    int year;
     printf("Enter the year to check \n");
-    scanf("%d", &yr);
+    scanf("%d", &year);
 
-    if(yr % 4 == 0 && yr % 100 == 0 && yr % 400 == 0)
+    if(year % 4 == 0 && year % 100 == 0 && year % 400 == 0)
     printf("It is a leap year");
 
-    else if(yr %4 == 0 && yr % 100 != 0)
+    else if(year %4 == 0 && year % 100 != 0)
     printf("It is a leap year");
 
     else
