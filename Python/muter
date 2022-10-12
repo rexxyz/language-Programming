@@ -1,0 +1,10 @@
+# Step 1: Make all the “turtle” commands available to us.
+import turtle
+
+# Step 2: Create a new turtle. We’ll call it “muter”
+muter = turtle.Turtle()
+
+## Step 3:menggambar kotak menggunakan 4 garis menggunakan for
+for i in range(100):
+ muter.forward(20 + i * 3)
+ muter.right(90)
