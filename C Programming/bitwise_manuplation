@@ -1,0 +1,131 @@
+1.	 //Swapping using XOR operator without the use of third variable;
+#include <stdio.h>
+int main()
+{  int a,b;
+    printf("Enter the number\n");
+    scanf("%d %d",&a,&b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+   printf("%d \n%d ",a,b);
+    return 0;
+}
+2.
+//Finding even and odd with the help of and operator
+#include <stdio.h>
+int main()
+{  int x,y;
+    printf("Enter the number\n");
+    scanf("%d",&x);
+   if(x&1==0)
+   {
+   	printf("The given number %d is even",x);
+   }
+    else
+   {
+   	printf("The given number is odd");
+   }
+  
+    return 0;
+}
+3. //Using left shift operator to multiply 2 times and right shift operator to divide two times
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d",&x);
+	scanf("%d",&y);
+	printf("%d\n",x>>1);
+	printf("%d",y<<1);
+}
+4. set kth bit to 1:-
+{
+        // Write Your Code here
+        int c;
+        c=1<<K;
+         return N|c;
+    }
+   
+
+
+
+
+4. Find the ith bit in a number.
+
+int n,i;
+cin >> n >> i;
+int mask=1 << i;
+  return n&mask;
+
+5.Change the ith bit to opposite.
+
+int n,i;
+cin >> n >>i;
+int mask = ~(1 << i);
+ return n&mask;
+
+6.Find number of bits to convert number A to B;
+
+int main()
+{
+    
+int a,b;
+cin >> a >> b;
+int c=a^b;
+int count=0;
+int i;
+
+    while (c > 0) {
+        count++;
+        c &= (c - 1);
+    }
+    
+cout << count;
+}
+
+7.Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int temp=0;
+        for(int i=0;i<nums.size();i++){
+            
+            temp=temp^nums[i];
+        
+           
+        }
+        return temp;
+    }
+#Geeks for geeks question
+8.Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
+
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        
+        long long int ans = 0, c=0;
+		//for every position, find out the number of set bits in the array for that particular position
+        for(int i=31;i>=0;i--){
+            c=0;
+            for(int j=0;j<nums.size();j++){
+                int temp = abs(nums[j]); //to handle negative
+				//if the bit is set increase the count
+                if(temp & (1<<i)) c++; 
+            }   
+			// if the count is divisible by 3 it means that the bit of our answer at that position is 0
+			// else if the count is not divisible by 3 it means that the bit of our answer at that position is 1
+			// whenever the bit is set we just add that number to the ans
+            if(c%3!=0) ans+=(1<<i);   
+        }
+		
+		//this code is to handle negative occurance of the elements 
+		//if the abs of negative element occurs in the array
+        c=0;
+        for(auto i:nums) if(i==ans)c++;  
+        if(c==1) return ans;
+        return -ans;
+    }
+};
+
+
