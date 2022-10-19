@@ -1,18 +1,27 @@
-#include<stdio.h>
-#include<math.h>
-int fib();
+//Program to print fibonacci triangle
+#include<stdio.h>    
 int main()
-{int n;
- printf("Enter The No Of Terms ");
- scanf("%d",&n);
- printf("%d \n",fib(n));
- return 0;
-}
-int fib(int n)
-{   if(n==0)
-    return 0;
-    else if(n==1)
-    return 1;
-    int Fib = fib(n-2)+fib(n-1);
-    return Fib;
-}
+{  
+   int a=0,b=1,i,c,limit,j;    
+  //Asking for input
+    printf("Enter the limit:");    
+    scanf("%d",&limit);
+    //for loop to print traingle   
+    for(i=1;i<=limit;i++)    
+    {    
+        a=0;    
+        b=1;    
+        printf("%d\t",b);    
+        for(j=1;j<i;j++)    
+        {    
+            //to print fibonacci series
+            c=a+b;    
+            printf("%d\t",c);    
+            a=b;    
+            b=c;    
+    
+        }    
+        printf("\n");    
+    }    
+return 0;  
+}  
