@@ -1,0 +1,28 @@
+{
+  "name": "hostezon",
+  "version": "1.0.0",
+  "description": "An App to help students",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Tej Pratap",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.5",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.16",
+    "nodemailer-sendgrid": "^1.0.3",
+    "nodemon": "^2.0.4",
+    "slugify": "^1.4.5",
+    "validator": "^13.1.1",
+    "xss-clean": "^0.1.1"
+  }
+}
