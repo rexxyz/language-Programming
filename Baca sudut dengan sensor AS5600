@@ -13,4 +13,5 @@ void loop() {
   output = encoder.getAngle();
   sudut = output * 0.087890625;
   Serial.println(sudut);
+  //FXXRPI pull
 }
