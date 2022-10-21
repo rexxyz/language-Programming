@@ -4,3 +4,4 @@ C Programming Ideas
   * Beginner Smart Home
   * Beginner Robotic Arm Project
   * internet of things (IOT)
+  * Scada system
