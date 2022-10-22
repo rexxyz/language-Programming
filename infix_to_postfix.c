@@ -1,5 +1,4 @@
-//By default the stack contains a '{' and we put a '#' at the end of the infix expression.Since we are using a string 
-//we could use '\0' instead of #.
+
 #include<stdio.h>
 #include<string.h>
 #define SIZE 20
@@ -11,8 +10,8 @@ int TOP =-1;
 void push (int c);
 int pop (void);
 void printToken(void);
-int getToken(char c);//Return what kind of token ,the character is?
-void postfix(int token);//The argument is a string which is also a numerical constant.
+int getToken(char c);
+void postfix(int token);
 int main()
 {
 	int token,temp1,temp2,spare;
@@ -98,7 +97,7 @@ void postfix(int token)
     push(token);return;
   }
  
-  if(in_stack_precedence[stack[TOP]]>=incoming_precedence[token])//very beautiful implementation.
+  if(in_stack_precedence[stack[TOP]]>=incoming_precedence[token])
   { 
   	while(in_stack_precedence[stack[TOP]]>=incoming_precedence[token])
     {printToken();}
@@ -133,4 +132,4 @@ void printToken(void)
   	case mod:printf("%");break;
   	
   }
-}//The enum are just variable with numerical value.
+}
