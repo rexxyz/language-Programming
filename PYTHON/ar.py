@@ -11,9 +11,9 @@ corners={}
 cr=[]
 
 ArUco_corners = {}
-img=cv2.imread("V:/eYentr@/task-1/PB_Task1_Windows/Task1B/public_test_cases/aruco_0.png")
+img=cv2.imread("Path_to_image")
 grey_scale=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-key=getattr(aruco, f'DICT_5X5_250')
+key=getattr(aruco, f'DICT_5X5_250')#The dimensions can vary.
 arucoDict=aruco.Dictionary_get(key)
 arucoParam=aruco.DetectorParameters_create()
 aruco_found=aruco.detectMarkers(grey_scale,arucoDict,parameters=arucoParam)
@@ -32,8 +32,6 @@ if len(aruco_found[0])!=0:
    unit_vector_2 = vector_2 / np.linalg.norm(vector_2)
    dot_product =np.dot(unit_vector_1, unit_vector_2)
    angle = np.arccos(dot_product)
-   if (center_x>x):
-    angle=-angle
    angle=int(angle*180/3.14)
    info[Id[0]]=[[x,y],angle]
     
