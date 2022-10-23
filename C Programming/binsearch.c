@@ -47,4 +47,5 @@ int main() //Main function to invoke function and print the index of the key ele
     int key=3;
     printf("Index of the element is : %d",pbinsearch(arr1,n,key));
     return 0;
+         //pull by SETYABAMBXX
 }
