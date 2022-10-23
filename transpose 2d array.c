@@ -22,6 +22,7 @@ int main(){
             printf("%d\t", b[i][j]);
         }
         printf("\n");
+          //pull by GUDSKULL
     }
 }
    
