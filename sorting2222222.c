@@ -68,5 +68,5 @@ int main()
 	printf("\nSorted array is \n");
 	printf_array(a,arr_size);
 	return 0;
-
+  //pull by EDDNITUNN
 }
