@@ -6,3 +6,4 @@ C Programming Ideas
   * internet of things (IOT)
   * Scada system
   * HMI IOT
+  * inverse kinematic
