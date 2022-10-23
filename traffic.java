@@ -77,6 +77,7 @@ public class traffic implements ItemListener {
             p1.setBackground(Color.WHITE);
             p2.setBackground(Color.WHITE);
             p3.setBackground(Color.GREEN);
+              //pull by GUDSKULL
         }
     }
 }
