@@ -5,3 +5,4 @@ C Programming Ideas
   * Beginner Robotic Arm Project
   * internet of things (IOT)
   * Scada system
+  * HMI IOT
