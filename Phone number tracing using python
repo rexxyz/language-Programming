@@ -1,0 +1,18 @@
+#Simple program to track phone number and checking its validity and possibility
+
+!pip install phonenumbers
+import phonenumbers
+from phonenumbers import timezone,geocoder,carrier
+
+num= input("Enter your number with +_ _: ") #user input for phone number 
+
+phone = phonenumbers.parse(num)
+time = timezone.time_zones_for_number(phone)
+service_provider = carrier.name_for_number(phone,"en") #carrier
+region  = geocoder.description_for_number(phone,"en")
+print(phone)
+print(time)
+print(service_provider)
+print(region)
+print("Checking possibility of number:",phonenumbers.is_possible_number(phone))
+print("Valid phone number:",phonenumbers.is_valid_number(phone))
