@@ -1,5 +1,6 @@
 regist1(proonestuck)
 - [AlvianingrumRico](https://github.com/AlvianingrumR
+- - [HaddadRizki](https://github.com/HaddadRizki)
 - - [RaflesHafizh](https://github.com/RaflesHafizh)
 - - [DeviRoy](https://github.com/DeviRoy)
 - - [ChairunnisaRedian](https://github.com/ChairunnisaRedian)
