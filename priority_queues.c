@@ -48,5 +48,6 @@ void enqueue(int x,int p)
  else{REAR[p]=(REAR[p]+1)%SIZE;
  	PQ[p][REAR[p]]=x;
  	if(FRONT[p]==-1)FRONT[p]=0;
+        //Pull by Mabizarnovaris 
      }
 }
