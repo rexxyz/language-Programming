@@ -34,4 +34,6 @@ int main()
     printf("Enter The Correct Operator");
         break;
     }
+    return 0;
+    // pull by khushbu078
 }
